@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: #eee;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #111;
+    border-bottom: 2px solid red;
+}
+
+.navbar a {
+    color: #eee;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    color: red;
+}
+
+.hero {
+    height: 70vh;
+    background: url('../img/hero.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.hero h2 {
+    font-size: 50px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: red;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.insta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.insta-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sponsor-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: #111;
+    border-top: 2px solid red;
+}
