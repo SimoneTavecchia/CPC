@@ -1,3 +1,6 @@
+/* -------------------------------- */
+/* REGOLE GLOBALI */
+/* -------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +11,20 @@
 body {
     background: #0f0f0f;
     color: #eee;
+    line-height: 1.6;
 }
 
+h1, h2, h3 {
+    color: #fff;
+}
+
+/* -------------------------------- */
+/* NAVBAR */
+/* -------------------------------- */
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 40px;
     background: #111;
     border-bottom: 2px solid red;
@@ -22,6 +34,11 @@ body {
     color: #eee;
     margin-left: 20px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: red;
 }
 
 .logo {
@@ -29,6 +46,9 @@ body {
     color: red;
 }
 
+/* -------------------------------- */
+/* HERO SECTION */
+/* -------------------------------- */
 .hero {
     height: 70vh;
     background: url('../img/hero.jpg') center/cover no-repeat;
@@ -40,6 +60,7 @@ body {
 
 .hero h2 {
     font-size: 50px;
+    text-shadow: 0px 0px 10px black;
 }
 
 .btn {
@@ -50,31 +71,98 @@ body {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
-.insta-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 15px;
-    padding: 20px;
+.btn:hover {
+    background: #ff3b3b;
 }
 
-.insta-grid img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.sponsor-grid {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    padding: 20px;
-}
-
-footer {
+/* -------------------------------- */
+/* PAGE HEADER */
+/* -------------------------------- */
+.page-header {
     text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-    background: #111;
-    border-top: 2px solid red;
+    padding: 60px 20px;
+    border-bottom: 2px solid #222;
+    background: #151515;
 }
+
+.page-header h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* -------------------------------- */
+/* MEMBRI */
+/* -------------------------------- */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.member-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    border-color: red;
+}
+
+.member-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* -------------------------------- */
+/* SPONSOR */
+/* -------------------------------- */
+.sponsor-grid.big {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.sponsor-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-5px);
+    border-color: red;
+}
+
+.sponsor-card img {
+    width: 100%;
+    max-height: 140px;
+    object-fit: contain;
+    background: #0f0f0f;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* -------------------------------- */
+/* BLOG */
+/* -------------------------------- */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 40px;
