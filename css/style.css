@@ -163,7 +163,17 @@ h1, h2, h3 {
     object-fit: contain;
     background: #0f0f0f;
 }
+.partner-link a {
+    color: white;            /* Colore bianco */
+    text-decoration: none;   /* Rimuove la sottolineatura brutta di default */
+    transition: color 0.3s ease; /* Rende il cambio di colore fluido e morbido */
+}
 
+/* Stato quando ci passi sopra con il mouse */
+.partner-link a:hover {
+    color: red;              /* Diventa rosso */
+    text-decoration: underline; /* Opzionale: aggiunge la sottolineatura solo al passaggio */
+}
 /* -------------------------------- */
 /* BLOG */
 /* -------------------------------- */
