@@ -234,12 +234,13 @@ h1, h2, h3 {
     /* Ombra: spostamento X, spostamento Y, sfocatura, colore */
     border: none; 
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Bagliore bianco soffuso */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Rende il movimento fluido */
+    /*transition: transform 0.3s ease, box-shadow 0.3s ease; */ /* Rende il movimento fluido */
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); /* Transizione più fluida e professionale */
 }
 .article-img:hover {
-    transform: scale(1.02); /* Ingrandisce leggermente la foto */
-    border-color: #b48c64; /* Codice colore rame tipico Cupra */
-    box-shadow: 0 15px 40px rgba(180, 140, 100, 0.4);
+    transform: scale(1.1); /* Ingrandisce leggermente la foto */
+    /*box-shadow: 0 15px 40px rgba(180, 140, 100, 0.4);*/
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3); /* Aumenta anche l'ombra bianca */
 }
 /* --- Nuove regole per lo Zig-Zag --- */
 .zig-zag-row {
