@@ -274,7 +274,7 @@ h1, h2, h3 {
     white-space: pre-wrap; /* Mantiene i tuoi "A capo" ma non esce dai bordi */
     word-wrap: break-word;
     margin: 0;
-    color: inherit;    /* Prende il colore #ccc definito sopra */
+    color: inherit;    /* Prende il colore definito sopra */
     text-justify: inter-word;
 }
 
