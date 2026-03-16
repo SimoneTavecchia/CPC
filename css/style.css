@@ -271,11 +271,12 @@ h1, h2, h3 {
     
 }
 .zig-zag-row .col-text pre {
-    white-space: pre-wrap; /* Mantiene i tuoi "A capo" ma non esce dai bordi */
+    white-space: pre-wrap !important; /* Mantiene i tuoi "A capo" ma non esce dai bordi */
     word-wrap: break-word;
     margin: 0;
     color: inherit;    /* Prende il colore definito sopra */
     text-justify: inter-word;
+    max-width: 100%; /* <--- Impedisce fisicamente al testo di uscire dal bordo */
 }
 
 /* Adattamento per Mobile */
