@@ -237,8 +237,8 @@ h1, h2, h3 {
 .zig-zag-row {
     display: flex;
     align-items: center; /* Centra verticalmente il testo rispetto alla foto */
-    gap: 40px; /* Spazio tra testo e immagine */
-    margin-bottom: 60px;
+    gap: 60px; /* Spazio tra testo e immagine */
+    margin-bottom: 80px;
 }
 
 /* Inverte l'ordine nelle righe pari (2ª, 4ª, ecc.) */
