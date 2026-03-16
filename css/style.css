@@ -269,7 +269,9 @@ h1, h2, h3 {
     /* Opzionale: aggiungi un po' di padding per non far toccare il testo alla foto */
     padding: 0 20px;
     min-width: 250px;     /* FONDAMENTALE per far funzionare il pre-wrap */
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra il testo verticalmente rispetto alla foto */
 }
 .zig-zag-row .col-text pre {
     white-space: pre-wrap !important; /* Mantiene i tuoi "A capo" ma non esce dai bordi */
@@ -281,6 +283,10 @@ h1, h2, h3 {
     /* ... altre proprietà ... */
     text-indent: 0; /* Rimuove rientri automatici */
     margin-left: 0;
+    text-align: left;    /* Forza l'allineamento a sinistra */
+    padding-left: 0;     /* Rimuove eventuali spazi interni a sinistra */
+    display: block;      /* Assicura che si comporti come un blocco intero */
+   
 }
 
 /* Adattamento per Mobile */
