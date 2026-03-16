@@ -278,6 +278,9 @@ h1, h2, h3 {
     color: inherit;    /* Prende il colore definito sopra */
     text-justify: inter-word;
     max-width: 100%; /* <--- Impedisce fisicamente al testo di uscire dal bordo */
+    /* ... altre proprietà ... */
+    text-indent: 0; /* Rimuove rientri automatici */
+    margin-left: 0;
 }
 
 /* Adattamento per Mobile */
