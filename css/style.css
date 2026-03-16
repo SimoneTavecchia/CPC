@@ -163,16 +163,7 @@ h1, h2, h3 {
     object-fit: contain;
     background: #0f0f0f;
 }
-.partner a {
-    color: #eee;
-    margin-left: 20px;
-    text-decoration: none;
-    transition: 0.3s;
-}
 
-.partner a:hover {
-    color: red;
-}
 /* -------------------------------- */
 /* BLOG */
 /* -------------------------------- */
