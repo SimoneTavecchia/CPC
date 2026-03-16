@@ -236,6 +236,7 @@ h1, h2, h3 {
 /* Ho rimosso il margin 20px 0 per non sballare l'allineamento laterale */
 .article-img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
     display: block;
 }
@@ -243,9 +244,9 @@ h1, h2, h3 {
 /* --- Nuove regole per lo Zig-Zag --- */
 .zig-zag-row {
     display: flex;
-    align-items: center;
-    gap: 30px; /* Spazio tra testo e immagine */
-    margin-bottom: 50px;
+    align-items: center; /* Centra verticalmente il testo rispetto alla foto */
+    gap: 40px; /* Spazio tra testo e immagine */
+    margin-bottom: 60px;
 }
 
 /* Inverte l'ordine nelle righe pari (2ª, 4ª, ecc.) */
@@ -253,9 +254,13 @@ h1, h2, h3 {
     flex-direction: row-reverse;
 }
 
-.zig-zag-row .col-img, 
+.zig-zag-row .col-img {
+    flex: 1;
+    min-width: 300px; /* Impedisce alla foto di diventare minuscola */
+}
 .zig-zag-row .col-text {
-    flex: 1; /* Divide lo spazio 50/50 */
+    flex: 1.5; /* Dà un po' più di spazio al testo rispetto alla foto */
+    color: #fff; /* Per far leggere bene il testo sul nero */
 }
 
 /* Adattamento per Mobile */
