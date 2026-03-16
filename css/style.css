@@ -216,7 +216,57 @@ h1, h2, h3 {
 /* -------------------------------- */
 /* ARTICOLO */
 /* -------------------------------- */
+/* --- Il tuo stile originale --- */
 .article {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.article h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.article .date {
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* Ho rimosso il margin 20px 0 per non sballare l'allineamento laterale */
+.article-img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/* --- Nuove regole per lo Zig-Zag --- */
+.zig-zag-row {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Spazio tra testo e immagine */
+    margin-bottom: 50px;
+}
+
+/* Inverte l'ordine nelle righe pari (2ª, 4ª, ecc.) */
+.zig-zag-row:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.zig-zag-row .col-img, 
+.zig-zag-row .col-text {
+    flex: 1; /* Divide lo spazio 50/50 */
+}
+
+/* Adattamento per Mobile */
+@media (max-width: 768px) {
+    .zig-zag-row, .zig-zag-row:nth-of-type(even) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*.article {  codice vecchio
     max-width: 900px;
     margin: 50px auto;
     padding: 20px;
@@ -237,7 +287,7 @@ h1, h2, h3 {
     border-radius: 10px;
     margin: 20px 0;
 }
-
+*/
 /* -------------------------------- */
 /* INSTAGRAM GRID */
 /* -------------------------------- */
