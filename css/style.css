@@ -9,7 +9,6 @@
     font-family: 'Inter', sans-serif; /* Applica il nuovo font a tutto l'articolo */
     line-height: 1.6; /* Aumenta l'interlinea per leggere meglio */
     letter-spacing: -0.5px; /* Testo più compatto e cattivo */
-    text-transform: uppercase; /* Stile sportivo come i loghi auto */
     text-align: justify; /* Testo ben allineato ai lati */
 }
 
