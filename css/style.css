@@ -258,19 +258,24 @@ h1, h2, h3 {
     flex-direction: row-reverse;
 }
 /* Rendi le due colonne uguali (50% e 50%) */
-.col-img {
+.zig-zag-row .col-img {
     flex: 3; 
     min-width: 500px; /* Alza un po' il minimo se vuoi foto più grandi */
 }
-.col-text {
+.zig-zag-row .col-text {
     flex: 0.5; 
     color: #fff;
     /* Opzionale: aggiungi un po' di padding per non far toccare il testo alla foto */
     padding: 0 20px;
-    margin: 0;
-    /* Permette al testo di andare a capo se la riga è troppo lunga (fondamentale!) */
-    white-space: pre-wrap; 
+    min-width: 0;     /* FONDAMENTALE per far funzionare il pre-wrap */
+    
+}
+.zig-zag-row .col-text pre {
+    white-space: pre-wrap; /* Mantiene i tuoi "A capo" ma non esce dai bordi */
     word-wrap: break-word;
+    margin: 0;
+    color: inherit;    /* Prende il colore #ccc definito sopra */
+    text-justify: inter-word;
 }
 
 /* Adattamento per Mobile */
