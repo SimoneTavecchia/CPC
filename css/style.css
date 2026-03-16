@@ -231,8 +231,14 @@ h1, h2, h3 {
     height: auto;
     border-radius: 10px;
     display: block;
+    /* Ombra: spostamento X, spostamento Y, sfocatura, colore */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Rende il movimento fluido */
 }
-
+.article-img:hover {
+    transform: scale(1.02); /* Ingrandisce leggermente la foto */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+}
 /* --- Nuove regole per lo Zig-Zag --- */
 .zig-zag-row {
     display: flex;
