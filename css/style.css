@@ -193,7 +193,7 @@ h1, h2, h3 {
     display: block;       /* Trasforma l'immagine in un blocco */
     margin: 20px auto 0;  /* Centra orizzontalmente e dà spazio sopra (20px) */
     width: 200px;         /* Definiamo la larghezza qui, pulendo l'HTML */
-    height: 170px;
+    height: auto;        /* 170px */
     object-fit: cover;
     border-radius: 5px;   /* Opzionale: sta bene con il resto del design */
 }
