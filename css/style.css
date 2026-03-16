@@ -258,16 +258,21 @@ h1, h2, h3 {
     flex-direction: row-reverse;
 }
 /* Rendi le due colonne uguali (50% e 50%) */
-.zig-zag-row .col-img {
+.col-img {
     flex: 3; 
     min-width: 500px; /* Alza un po' il minimo se vuoi foto più grandi */
 }
-.zig-zag-row .col-text {
+.col-text {
     flex: 0.5; 
     color: #fff;
     /* Opzionale: aggiungi un po' di padding per non far toccare il testo alla foto */
-    padding: 0 20px; 
+    padding: 0 20px;
+    margin: 0;
+    /* Permette al testo di andare a capo se la riga è troppo lunga (fondamentale!) */
+    white-space: pre-wrap; 
+    word-wrap: break-word;
 }
+
 /* Adattamento per Mobile */
 @media (max-width: 768px) {
     .zig-zag-row, .zig-zag-row:nth-of-type(even) {
