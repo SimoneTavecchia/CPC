@@ -247,11 +247,11 @@ h1, h2, h3 {
 }
 /* Rendi le due colonne uguali (50% e 50%) */
 .zig-zag-row .col-img {
-    flex: 1; 
+    flex: 1.5; 
     min-width: 350px; /* Alza un po' il minimo se vuoi foto più grandi */
 }
 .zig-zag-row .col-text {
-    flex: 1; /* Portalo a 1 invece di 1.5 */
+    flex: 0.75; /* Portalo a 1 invece di 1.5 */
     color: #fff;
     /* Opzionale: aggiungi un po' di padding per non far toccare il testo alla foto */
     padding: 0 20px; 
