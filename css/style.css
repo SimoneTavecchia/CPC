@@ -172,7 +172,7 @@ h1, h2, h3 {
 /* Stato quando ci passi sopra con il mouse */
 .partner-link a:hover {
     color: red;              /* Diventa rosso */
-    text-decoration: underline; /* Opzionale: aggiunge la sottolineatura solo al passaggio */
+    text-decoration: none; /* Opzionale: aggiunge la sottolineatura solo al passaggio */
 }
 /* -------------------------------- */
 /* BLOG */
