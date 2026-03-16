@@ -210,7 +210,7 @@ h1, h2, h3 {
 /* -------------------------------- */
 /* --- Il tuo stile originale --- */
 .article {
-    max-width: 900px;
+    max-width: 1200px; /* <--- Se era 900px, portalo a 1100px o 1200px */
     margin: 50px auto;
     padding: 20px;
 }
@@ -256,8 +256,8 @@ h1, h2, h3 {
 }
 /* Rendi le due colonne uguali (50% e 50%) */
 .zig-zag-row .col-img {
-    flex: 1.5; 
-    min-width: 350px; /* Alza un po' il minimo se vuoi foto più grandi */
+    flex: 2.5; 
+    min-width: 450px; /* Alza un po' il minimo se vuoi foto più grandi */
 }
 .zig-zag-row .col-text {
     flex: 0.75; /* Portalo a 1 invece di 1.5 */
