@@ -71,6 +71,7 @@ h1, h2, h3 {
 .btn {
     display: inline-block;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 12px 25px;
     background: red;
     color: #fff;
