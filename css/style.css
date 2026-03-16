@@ -245,7 +245,7 @@ h1, h2, h3 {
 .zig-zag-row {
     display: flex;
     align-items: center; /* Centra verticalmente il testo rispetto alla foto */
-    gap: 60px; /* Spazio tra testo e immagine */
+    gap: 20px; /* Spazio tra testo e immagine */
     margin-bottom: 80px;
 }
 
