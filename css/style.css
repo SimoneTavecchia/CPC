@@ -160,14 +160,19 @@ h1, h2, h3 {
 }
 
 .partner-card img {
-    width: 100%;
-    max-height: 140px;
     object-fit: contain;
     background: #0f0f0f;
-    padding: 15px;
-    border-radius: 8px;
+}
+.partner a {
+    color: #eee;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
+.partner a:hover {
+    color: red;
+}
 /* -------------------------------- */
 /* BLOG */
 /* -------------------------------- */
