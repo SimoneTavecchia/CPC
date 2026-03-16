@@ -232,7 +232,7 @@ h1, h2, h3 {
     border-radius: 10px;
     display: block;
     /* Ombra: spostamento X, spostamento Y, sfocatura, colore */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1); /* Un leggero chiarore grigio */ 
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Rende il movimento fluido */
 }
 .article-img:hover {
