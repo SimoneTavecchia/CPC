@@ -259,15 +259,15 @@ h1, h2, h3 {
 }
 /* Rendi le due colonne uguali (50% e 50%) */
 .zig-zag-row .col-img {
-    flex: 3; 
-    min-width: 500px; /* Alza un po' il minimo se vuoi foto più grandi */
+    flex: 2; 
+    min-width: 300px; /* Alza un po' il minimo se vuoi foto più grandi */
 }
 .zig-zag-row .col-text {
-    flex: 0.5; 
+    flex: 1.5; 
     color: #fff;
     /* Opzionale: aggiungi un po' di padding per non far toccare il testo alla foto */
     padding: 0 20px;
-    min-width: 0;     /* FONDAMENTALE per far funzionare il pre-wrap */
+    min-width: 250px;     /* FONDAMENTALE per far funzionare il pre-wrap */
     
 }
 .zig-zag-row .col-text pre {
