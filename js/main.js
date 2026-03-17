@@ -1,3 +1,8 @@
+/* per prova */
+console.log("Il file JS è caricato!");
+const testElement = document.getElementById('hero-gallery');
+console.log("Elemento trovato:", testElement);
+
 const hero = document.getElementById('hero-gallery');
 const images = [
     '..img/hero/IMG-1.jpg',
