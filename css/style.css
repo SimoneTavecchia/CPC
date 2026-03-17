@@ -85,7 +85,7 @@ h1, h2, h3 {
 /* Nuova aggiunta */
 .box-bottone {
     display: flex;
-    justify-content: flex-start; /* Allinea il tasto al testo a sinistra */
+    justify-content: center; /* Allinea il tasto al testo a sinistra flex-start*/
 }
 .video-container {
     position: relative;
