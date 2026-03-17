@@ -87,13 +87,6 @@ h1, h2, h3 {
     display: flex;
     justify-content: center; /* Allinea il tasto al testo a sinistra flex-start*/
 }
-.join-community {
-    background: #0f0f0f; /* Nero profondo */
-    padding: 80px 20px;
-    text-align: center;
-    border-top: 1px solid #222; /* Linea sottile di separazione */
-}
-
 .cta-content h2 {
     font-size: 36px;
     color: #fff;
@@ -113,6 +106,34 @@ h1, h2, h3 {
     font-size: 18px;
     padding: 15px 40px;
     /* Il resto dello stile lo prende già dalla tua classe .btn */
+}
+.join-community {
+    background: #0a0a0a;
+    padding: 100px 20px;
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+}
+
+.btn-whatsapp {
+    background-color: #25D366 !important; /* Verde WhatsApp */
+    color: white !important;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Spazio tra icona e testo */
+    padding: 15px 35px;
+    border-radius: 50px; /* Lo rendiamo più "pillola" per sembrare un'app */
+    font-size: 18px;
+}
+
+.btn-whatsapp i {
+    font-size: 24px; /* Icona un po' più grande del testo */
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe57 !important;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
 }
 .video-container {
     position: relative;
