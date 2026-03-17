@@ -190,6 +190,14 @@ h1, h2, h3 {
     color: red;              /* Diventa rosso */
     text-decoration: none; /* Opzionale: aggiunge la sottolineatura solo al passaggio */
 }
+/* Classe da applicare solo ai loghi neri */
+.bg-white-logo {
+    background-color: #ffffff !important; /* Forza lo sfondo bianco */
+    padding: 15px !important;            /* Dai spazio intorno al logo */
+    border-radius: 8px;                  /* Arrotonda gli angoli dello sfondo bianco */
+    object-fit: contain;
+}
+
 /* -------------------------------- */
 /* BLOG */
 /* -------------------------------- */
