@@ -87,6 +87,33 @@ h1, h2, h3 {
     display: flex;
     justify-content: center; /* Allinea il tasto al testo a sinistra flex-start*/
 }
+.join-community {
+    background: #0f0f0f; /* Nero profondo */
+    padding: 80px 20px;
+    text-align: center;
+    border-top: 1px solid #222; /* Linea sottile di separazione */
+}
+
+.cta-content h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.cta-content p {
+    color: #bbb;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* Usiamo la tua classe .btn che abbiamo già creato prima */
+.join-community .btn {
+    font-size: 18px;
+    padding: 15px 40px;
+    /* Il resto dello stile lo prende già dalla tua classe .btn */
+}
 .video-container {
     position: relative;
     width: 100%;
