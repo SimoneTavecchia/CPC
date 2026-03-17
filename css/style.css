@@ -70,11 +70,12 @@ h1, h2, h3 {
 /* -------------------------------- */
 .hero {
     height: 70vh;
-    background: url('../img/hero.jpg') center/cover no-repeat;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url('../img/hero.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 60px;
+    color: white;
 }
 
 .hero h2 {
@@ -84,7 +85,7 @@ h1, h2, h3 {
 /* Nuova aggiunta */
 .box-bottone {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Allinea il tasto al testo a sinistra */
 }
 
 .btn {
