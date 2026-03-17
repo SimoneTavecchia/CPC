@@ -1,17 +1,17 @@
 const hero = document.getElementById('hero-gallery');
 const images = [
-    'img/hero/IMG-1.jpg',
-    'img/hero/IMG-2.jpg',
-    'img/hero/IMG-3.jpg',
-    'img/hero/IMG-4.jpg',
-    'img/hero/IMG-5.jpg',
-    'img/hero/IMG-6.jpg',
-    'img/hero/IMG-7.jpg',
-    'img/hero/IMG-8.jpg',
-    'img/hero/IMG-9.jpg',
-    'img/hero/IMG-10.jpg',
-    'img/hero/IMG-11.jpg',
-    'img/hero/IMG-12.jpg',
+    '..img/hero/IMG-1.jpg',
+    '..img/hero/IMG-2.jpg',
+    '..img/hero/IMG-3.jpg',
+    '..img/hero/IMG-4.jpg',
+    '..img/hero/IMG-5.jpg',
+    '..img/hero/IMG-6.jpg',
+    '..img/hero/IMG-7.jpg',
+    '..img/hero/IMG-8.jpg',
+    '..img/hero/IMG-9.jpg',
+    '..img/hero/IMG-10.jpg',
+    '..img/hero/IMG-11.jpg',
+    '..img/hero/IMG-12.jpg',
     // ...aggiungi qui i nomi di tutte le tue foto
 
 ];
