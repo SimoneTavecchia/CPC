@@ -1,8 +1,3 @@
-/* per prova */
-console.log("Il file JS è caricato!");
-const testElement = document.getElementById('hero-gallery');
-console.log("Elemento trovato:", testElement);
-
 const hero = document.getElementById('hero-gallery');
 const images = [
     'img/hero/IMG-1.jpg',
@@ -24,7 +19,9 @@ let currentIndex = 0;
 
 function changeBackground() {
     // Applica la nuova immagine con l'effetto scuro (linear-gradient)
-    hero.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${images[currentIndex]}')`;
+        // Portiamo l'opacità da 0.5 a 0.7 o 0.8 per coprire i difetti
+
+    hero.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('${images[currentIndex]}')`;
     
     // Passa alla foto successiva, se arriva alla fine ricomincia da 0
     currentIndex = (currentIndex + 1) % images.length;
