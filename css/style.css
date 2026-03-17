@@ -52,7 +52,11 @@ h1, h2, h3 {
     padding: 0;
     display: inline-block;
 }
-
+.logo .separator {
+    color: red;           /* Il colore del trattino */
+    margin: 0 10px;       /* Crea 10px di spazio identico a DESTRA e SINISTRA */
+    display: inline-block; /* Permette al margine di funzionare correttamente */
+}
 /* -------------------------------- */
 /* HERO SECTION */
 /* -------------------------------- */
