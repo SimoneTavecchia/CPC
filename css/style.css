@@ -70,12 +70,15 @@ h1, h2, h3 {
 /* -------------------------------- */
 .hero {
     height: 70vh;
-    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url('../img/hero.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 60px;
-    color: white;
+    /* TRANSIZIONE MAGICA: rende il cambio foto fluido */
+    transition: background-image 1s ease-in-out; 
 }
 
 .hero h2 {
