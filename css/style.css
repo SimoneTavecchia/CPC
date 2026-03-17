@@ -69,18 +69,19 @@ h1, h2, h3 {
 /* HERO SECTION */
 /* -------------------------------- */
 .hero {
-    height: 70vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 60px;
+    /* Forza le dimensioni */
+    min-height: 70vh; /* Usa min-height invece di height */
+    width: 100%;
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     /* TRANSIZIONE MAGICA: rende il cambio foto fluido */
     transition: background-image 1s ease-in-out; 
-    background-color: #111; /*per test*/
 }
 
 .hero h2 {
