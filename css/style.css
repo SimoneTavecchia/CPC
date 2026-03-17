@@ -174,8 +174,13 @@ h1, h2, h3 {
     background: #1a1a1a;
     margin-bottom: 15px;  /* Spazio tra logo e testo del partner */
     border-radius: 5px;   /* Opzionale: arrotonda leggermente lo sfondo nero del logo */
-    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0) 70%);
-    padding: 10px; /* Spazio per far vedere la sfumatura */
+    
+    filter: brightness(1.8) contrast(1.2); /* Schiarisce i loghi neri rendendoli grigio chiaro */
+    transition: filter 0.3s ease; /* Effetto fluido al passaggio del mouse */
+}
+/* Quando l'utente ci passa sopra, il logo torna al colore originale (o brilla di più) */
+.partner-card img:hover {
+    filter: brightness(1) contrast(1); /* Torna al colore naturale */
 }
 .partner-link a {
     display: block;      /* Fa sì che il link occupi la sua riga */
