@@ -70,6 +70,7 @@ h1, h2, h3 {
 /* -------------------------------- */
 .hero {
     height: 70vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,6 +80,7 @@ h1, h2, h3 {
     padding-left: 60px;
     /* TRANSIZIONE MAGICA: rende il cambio foto fluido */
     transition: background-image 1s ease-in-out; 
+    background-color: #111; /*per test*/
 }
 
 .hero h2 {
