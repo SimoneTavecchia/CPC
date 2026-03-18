@@ -76,7 +76,7 @@ h1, h2, h3 {
     /* Forza le dimensioni */
     min-height: 70vh; /* Usa min-height invece di height */
     width: 100%;
-    filter: grayscale(10%) contrast(1.1); /* Rende i colori più "cattivi" e meno amatoriali */
+    filter: grayscale(15%) contrast(1.2) brightness(1.1); /* Rende i colori più "cattivi" e meno amatoriali */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
