@@ -260,15 +260,11 @@ h1, h2, h3 {
 }
 
 
-
-
-
-
 /* Il contenitore che tiene i cerchi allineati */
 .partner-socials {
     display: flex;
     gap: 12px; 
-    margin-top: 15px;
+    margin-top: 8px; /* Distanza dal nome del partner */
 }
 
 /* Lo stato normale: Nero con bordo Bianco */
