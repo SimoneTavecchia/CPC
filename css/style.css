@@ -109,23 +109,44 @@ h1, h2, h3 {
 }
 
 .cta-left p {
-    color: #ddd;          /* Colore un po' più chiaro per farlo leggere bene */
-    font-size: 16px;      /* Leggermente più piccolo per un look tecnico/racing */
-    line-height: 1.6;     /* Più spazio tra le righe per non farlo sembrare un muro di testo */
-    margin-top: 20px;     /* Stacca il testo dal logo sopra */
-    padding-right: 40px; /* Crea lo spazio dalla riga rossa */
-    max-width: 400px;     /* Impedisce al testo di allargarsi troppo verso destra */
-    text-align: left;     /* Forza l'allineamento a sinistra */
+    position: relative;
+    z-index: 2;
+    max-width: 450px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-align: left;
+    /* Un bordo rosso sottile a sinistra per dare un tocco di colore */
+    border-left: 2px solid #ff0000;
+    padding-left: 20px;
 }
 
 /* Assicurati che il contenitore a sinistra allinei tutto bene */
 .cta-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Allinea logo e testo a sinistra */
     flex: 1;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: flex-end; /* Testo in basso */
+    padding: 40px;
+    
+    /* CARICA L'IMMAGINE */
+    background: url('img/35.jpg') no-repeat;
+    background-position: left center; /* Immagine attaccata a sinistra */
+    background-size: contain; /* Mantiene le proporzioni senza tagliarla */
 }
 
+/* IL SEGRETO PER LA LEGGIBILITÀ: Un gradiente nero sotto al testo */
+.cta-left::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    /* Sfuma la foto verso il nero del sito sia a destra che in alto */
+    background: linear-gradient(to right, transparent 20%, #0a0a0a 90%),
+                linear-gradient(to top, #0a0a0a 10%, transparent 50%);
+    z-index: 1;
+}
 .cpc-logo {
     max-width: 250px; /* Regola la grandezza del logo Cupra */
     height: auto;
@@ -173,7 +194,9 @@ h1, h2, h3 {
 
 .box-bottone {
     display: flex;
-    justify-content: flex-start; /* Allinea il tasto a sinistra */
+    justify-content: center; /* Centra il bottone orizzontalmente */
+    width: 100%;            /* Occupa tutta la larghezza della card per poter centrare */
+    margin-top: 10px;      
 }
 
 /* Responsive: per il telefono li mettiamo uno sopra l'altro */
@@ -229,7 +252,7 @@ h1, h2, h3 {
 }
 /* Assicurati che i link abbiano un colore visibile e un'area cliccabile */
 .video-overlay a {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Orbitron', sans-serif !important;
     color: white;
     text-decoration: none;
     display: inline-block; /* Aiuta a rendere l'area del link più solida */
@@ -241,20 +264,45 @@ h1, h2, h3 {
     text-transform: uppercase; /* Se lo vuoi tutto in maiuscolo come il resto del sito */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Crea un distacco netto dal video */
 }
+.video-overlay a span {
+    font-family: 'Orbitron', sans-serif !important;
+    font-style: normal; /* Evita che Icomoon lo metta in corsivo */
+}
+.testo-link {
+    font-family: 'Orbitron', sans-serif; /* O il font che hai scelto */
+    margin-left: 2spx; /* Distanzia un po' l'icona dal testo */
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+/* Assicurati che l'icona mantenga il suo font originale */
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important; /* Forza Icomoon a restare tale */
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: middle;
+}
 .btn {
     display: inline-block;
+    text-align: center;  /* Centra la scritta "Leggi di più" */
+    white-space: nowrap; /* Impedisce al testo "Leggi di più" di spezzarsi */
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 12px 25px;
+    padding: 12px 30px;
+    font-weight: 600; 
     background: red;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: 0.3s;
+    min-width: 160px;       /* Gli diamo una larghezza minima per non farlo sembrare "schiacciato" */
+    text-decoration: none;    
 }
 
 .btn:hover {
-    background: #ff3b3b;
+    background: red;
+    transform: scale(1.05); /* Si ingrandisce appena per dare feedback */
 }
 
 /* -------------------------------- */
