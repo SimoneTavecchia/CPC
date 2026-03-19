@@ -259,20 +259,29 @@ h1, h2, h3 {
     border-radius: 5px;   /* Opzionale: arrotonda leggermente lo sfondo nero del logo */
 }
 
-.partner-link a {
-    display: block;      /* Fa sì che il link occupi la sua riga */
-    margin-top: 10px;
-    font-size: 14px;
-    color: white;            /* Colore bianco */
-    text-decoration: none;   /* Rimuove la sottolineatura brutta di default */
-    transition: color 0.3s ease; /* Rende il cambio di colore fluido e morbido */
+
+.partner-links a {
+    text-decoration: none;
+    color: #333; /* Colore base */
+    font-size: 24px; /* Dimensione icona */
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Stato quando ci passi sopra con il mouse */
-.partner-link a:hover {
-    color: red;              /* Diventa rosso */
-    text-decoration: none; /* Opzionale: aggiunge la sottolineatura solo al passaggio */
+.partner-links a:hover {
+    transform: scale(1.2); /* Si ingrandisce leggermente al passaggio */
 }
+
+/* Colore specifico al passaggio del mouse */
+.fa-instagram:hover {
+    color: #E1306C; /* Colore tipico Instagram */
+}
+
+.fa-globe:hover {
+    color: #007bff; /* Blu classico per il web */
+}
+
+
 /* Classe da applicare solo ai loghi neri */
 .bg-white-logo {
     background-color: #ffffff !important; /* Forza lo sfondo bianco */
