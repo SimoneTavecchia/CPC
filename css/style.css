@@ -260,29 +260,39 @@ h1, h2, h3 {
 }
 
 
-.partner-links a {
+
+
+
+
+/* Il contenitore che tiene i cerchi allineati */
+.partner-socials {
+    display: flex;
+    gap: 12px; 
+    margin-top: 15px;
+}
+
+/* Il CERCHIO (quello che nell'immagine è grigio col bordo) */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;           /* Misura del cerchio */
+    height: 40px;          /* Misura del cerchio */
+    border: 2.5px solid #000; /* Bordo nero spesso come in foto */
+    border-radius: 50%;    /* Lo rende un cerchio perfetto */
+    background-color: #999; /* Grigio dello sfondo del cerchio */
+    color: #000;           /* Colore dell'icona (Nera) */
     text-decoration: none;
-    color: #ffffff; /* Forza il bianco per vederle subito */
-    font-size: 30px; /* Ingrandiscile un po' per sicurezza */
-    margin: 0 10px;
-    display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 18px;       /* Grandezza dell'icona interna */
+    transition: 0.3s;
 }
 
-.partner-links a:hover {
-    transform: scale(1.2); /* Si ingrandisce leggermente al passaggio */
+/* Effetto al passaggio del mouse: inverte i colori */
+.social-icon:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.1);
 }
-
-/* Colore specifico al passaggio del mouse */
-.fa-instagram:hover {
-    color: #E1306C; /* Colore tipico Instagram */
-}
-
-.fa-globe:hover {
-    color: #007bff; /* Blu classico per il web */
-}
-
-
 /* Classe da applicare solo ai loghi neri */
 .bg-white-logo {
     background-color: #ffffff !important; /* Forza lo sfondo bianco */
