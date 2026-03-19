@@ -286,7 +286,7 @@ h1, h2, h3 {
 /* STATO HOVER: Sfondo bianco, bordo e icona rossi */
 .social-icon:hover {
     background-color: #ffffff;  /* Diventa pieno bianco */
-    border-color: #e31e24;      /* Un rosso più "racing" (tipo scuderia) */
+    border-color: #ffffff;      
     color: #e31e24;            /* L'icona diventa rossa */
     transform: scale(1.1);      /* Si ingrandisce un pelo */
 }
