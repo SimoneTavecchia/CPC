@@ -273,11 +273,11 @@ h1, h2, h3 {
 }
 
 /* Colore specifico al passaggio del mouse */
-.instagram:hover {
+.fa-instagram:hover {
     color: #E1306C; /* Colore tipico Instagram */
 }
 
-.globe:hover {
+.fa-globe:hover {
     color: #007bff; /* Blu classico per il web */
 }
 
