@@ -90,37 +90,104 @@ h1, h2, h3 {
     font-size: 50px;
     text-shadow: 0px 0px 10px black;
 }
-/* Nuova aggiunta */
-.box-bottone {
-    display: flex;
-    justify-content: center; /* Allinea il tasto al testo a sinistra flex-start*/
+/* IL PADRE: Divide in due colonne */
+.join-community {
+    background: #0a0a0a;
+    padding: 80px 10%; /* Spazio sopra/sotto e ai lati */
+    border-top: 1px solid #1a1a1a;
 }
-.cta-content h2 {
+
+.cta-container {
+    display: flex;
+    justify-content: space-between; /* Spinge i blocchi ai lati opposti */
+    align-items: center;            /* Li allinea verticalmente */
+    gap: 80px;                      /* Spazio tra logo e testo */
+    /* TRUCCO PER CENTRARE IL TUTTO */
+    max-width: 14000px;    /* Accorcia la larghezza totale del contenuto */
+    margin: 0 auto;       /* Centra il contenitore nella pagina */
+    padding: 0 40px;      /* Spazio interno di sicurezza per i lati */
+}
+
+.cta-left p {
+    color: #ddd;          /* Colore un po' più chiaro per farlo leggere bene */
+    font-size: 16px;      /* Leggermente più piccolo per un look tecnico/racing */
+    line-height: 1.6;     /* Più spazio tra le righe per non farlo sembrare un muro di testo */
+    margin-top: 20px;     /* Stacca il testo dal logo sopra */
+    padding-right: 40px; /* Crea lo spazio dalla riga rossa */
+    max-width: 400px;     /* Impedisce al testo di allargarsi troppo verso destra */
+    text-align: left;     /* Forza l'allineamento a sinistra */
+}
+
+/* Assicurati che il contenitore a sinistra allinei tutto bene */
+.cta-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Allinea logo e testo a sinistra */
+    flex: 1;
+}
+
+.cpc-logo {
+    max-width: 250px; /* Regola la grandezza del logo Cupra */
+    height: auto;
+}
+
+/* ZONA DESTRA (Testo + Bottone) */
+.cta-right {
+    flex: 1.2; /* Diamo un po' più spazio alla parte scritta */
+    position: relative; /* Serve per posizionare la linea */
+    padding-left: 60px;
+}
+
+.cta-right h2 {
     font-size: 36px;
     color: #fff;
     margin-bottom: 15px;
     text-transform: uppercase;
+    text-align: left; /* Forza le parole a stare vicine a sinistra */
+    word-spacing: normal; /* Per sicurezza, resetta lo spazio tra le parole */
+    letter-spacing: normal; /* Resetta lo spazio tra le lettere se l'avevi toccato */
+
 }
 
-.cta-content p {
+.cta-right p {
     color: #bbb;
     max-width: 600px;
-    margin: 0 auto 30px;
-    line-height: 1.6;
+    margin: 0 0 30px; /* Tolto l'auto: ora è tutto a sinistra */
+    font-size: 13px; /* Leggermente più piccolo per non appesantire */
+    line-height: 1.5;
+
+}
+.cta-right::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10%;            /* La stacca un po' dall'alto */
+    height: 100%;         /* La riga occupa l'80% dell'altezza del blocco */
+    width: 3px;          /* Spessore della riga */
+    background-color: red; /* Rosso */
 }
 
-/* Usiamo la tua classe .btn che abbiamo già creato prima */
-.join-community .btn {
-    font-size: 18px;
-    padding: 15px 40px;
-    /* Il resto dello stile lo prende già dalla tua classe .btn */
+.cta-left img {
+    margin-right: 100px; /* Allinea il logo con il padding del testo */
 }
-.join-community {
-    background: #0a0a0a;
-    padding: 100px 20px;
-    text-align: center;
-    border-top: 1px solid #1a1a1a;
+
+.box-bottone {
+    display: flex;
+    justify-content: flex-start; /* Allinea il tasto a sinistra */
 }
+
+/* Responsive: per il telefono li mettiamo uno sopra l'altro */
+@media (max-width: 768px) {
+    .cta-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cta-right, .box-bottone {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 
 
 .video-container {
@@ -287,7 +354,7 @@ h1, h2, h3 {
 .social-icon:hover {
     background-color: #ffffff;
     border-color: #ffffff; 
-    color: #e31e24; /* L'icona Icomoon diventa rossa */
+    color: red; /* L'icona Icomoon diventa rossa */
     transform: scale(1.1);
 }
 /* Classe da applicare solo ai loghi neri */

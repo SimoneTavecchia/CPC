@@ -10,7 +10,6 @@ const images = [
     'img/hero/IMG-8.jpg',
     'img/hero/IMG-9.jpg',
     'img/hero/IMG-10.jpg',
-    'img/hero/IMG-11.jpg',
     // ...aggiungi qui i nomi di tutte le tue foto
 
 ];
