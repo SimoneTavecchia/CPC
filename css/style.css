@@ -267,28 +267,28 @@ h1, h2, h3 {
     margin-top: 8px; /* Distanza dal nome del partner */
 }
 
-/* STATO NORMALE: Trasparente con bordo bianco */
+/* STATO NORMALE: Trasparente e Bianco */
 .social-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 32px;
     height: 32px;
-    border: 1.5px solid #ffffff; /* Bordo Bianco */
+    border: 1.5px solid #ffffff;
     border-radius: 50%;
-    background-color: transparent; /* SI ADATTA ALLO SFONDO */
-    color: #ffffff;               /* Icona Bianca */
+    background-color: transparent;
+    color: #ffffff; /* Colore icona bianca */
     text-decoration: none;
-    font-size: 14px;
-    transition: all 0.3s ease;
+    font-size: 16px;
+    transition: 0.3s ease;
 }
 
-/* STATO HOVER: Sfondo bianco, bordo e icona rossi */
+/* STATO HOVER: Tutto Bianco con icona Rossa */
 .social-icon:hover {
-    background-color: #ffffff;  /* Diventa pieno bianco */
-    border-color: #ffffff;      
-    color: #e31e24;            /* L'icona diventa rossa */
-    transform: scale(1.1);      /* Si ingrandisce un pelo */
+    background-color: #ffffff;
+    border-color: #ffffff; 
+    color: #e31e24; /* L'icona Icomoon diventa rossa */
+    transform: scale(1.1);
 }
 /* Classe da applicare solo ai loghi neri */
 .bg-white-logo {
