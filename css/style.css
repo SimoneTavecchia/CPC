@@ -271,27 +271,29 @@ h1, h2, h3 {
     margin-top: 15px;
 }
 
-/* Il CERCHIO (quello che nell'immagine è grigio col bordo) */
+/* Lo stato normale: Nero con bordo Bianco */
 .social-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;           /* Misura del cerchio */
-    height: 40px;          /* Misura del cerchio */
-    border: 2.5px solid #000; /* Bordo nero spesso come in foto */
-    border-radius: 50%;    /* Lo rende un cerchio perfetto */
-    background-color: #999; /* Grigio dello sfondo del cerchio */
-    color: #000;           /* Colore dell'icona (Nera) */
+    width: 32px;           /* Leggermente più piccoli per essere eleganti */
+    height: 32px;
+    border: 1.5px solid #ffffff; /* Bordo Bianco */
+    border-radius: 50%;
+    background-color: #000000;  /* Fondo Nero */
+    color: #ffffff;            /* Icona Bianca */
     text-decoration: none;
-    font-size: 18px;       /* Grandezza dell'icona interna */
-    transition: 0.3s;
+    font-size: 14px;           /* Dimensione icona proporzionata */
+    transition: all 0.3s ease-in-out;
 }
 
-/* Effetto al passaggio del mouse: inverte i colori */
+/* Lo stato al passaggio del mouse: Bianco con bordo Rosso */
 .social-icon:hover {
-    background-color: #000;
-    color: #fff;
-    transform: scale(1.1);
+    background-color: #ffffff;  /* Fondo diventa Bianco */
+    border-color: #ff0000;      /* Bordo diventa Rosso */
+    color: #ff0000;            /* L'icona diventa Rossa */
+    transform: translateY(-3px); /* Piccola animazione verso l'alto */
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3); /* Leggera ombra rossa */
 }
 /* Classe da applicare solo ai loghi neri */
 .bg-white-logo {
