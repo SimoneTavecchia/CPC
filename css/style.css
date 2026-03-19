@@ -267,29 +267,28 @@ h1, h2, h3 {
     margin-top: 8px; /* Distanza dal nome del partner */
 }
 
-/* Lo stato normale: Nero con bordo Bianco */
+/* STATO NORMALE: Trasparente con bordo bianco */
 .social-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;           /* Leggermente più piccoli per essere eleganti */
+    width: 32px;
     height: 32px;
     border: 1.5px solid #ffffff; /* Bordo Bianco */
     border-radius: 50%;
-    background-color: #000000;  /* Fondo Nero */
-    color: #ffffff;            /* Icona Bianca */
+    background-color: transparent; /* SI ADATTA ALLO SFONDO */
+    color: #ffffff;               /* Icona Bianca */
     text-decoration: none;
-    font-size: 14px;           /* Dimensione icona proporzionata */
-    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
-/* Lo stato al passaggio del mouse: Bianco con bordo Rosso */
+/* STATO HOVER: Sfondo bianco, bordo e icona rossi */
 .social-icon:hover {
-    background-color: #ffffff;  /* Fondo diventa Bianco */
-    border-color: #ff0000;      /* Bordo diventa Rosso */
-    color: #ff0000;            /* L'icona diventa Rossa */
-    transform: translateY(-3px); /* Piccola animazione verso l'alto */
-    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3); /* Leggera ombra rossa */
+    background-color: #ffffff;  /* Diventa pieno bianco */
+    border-color: #e31e24;      /* Un rosso più "racing" (tipo scuderia) */
+    color: #e31e24;            /* L'icona diventa rossa */
+    transform: scale(1.1);      /* Si ingrandisce un pelo */
 }
 /* Classe da applicare solo ai loghi neri */
 .bg-white-logo {
