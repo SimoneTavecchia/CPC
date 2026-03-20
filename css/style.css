@@ -92,20 +92,35 @@ h1, h2, h3 {
 }
 /* IL PADRE: Divide in due colonne */
 .join-community {
-    background: #0a0a0a;
-    padding: 80px 10%; /* Spazio sopra/sotto e ai lati */
-    border-top: 1px solid #1a1a1a;
+    position: relative;
+    min-height: 500px;
+    /* CARICA QUI LA TUA FOTO ORIZZONTALE */
+    background: url('img/IMG-Sfondo.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    overflow: hidden;
+    border-top: 1px solid #333;
+}
+/* IL VELO SCURO: Fondamentale per leggere i testi su tutta la foto */
+.join-community::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Scurisce l'intera foto */
+    z-index: 1;
 }
 
 .cta-container {
+    position: relative;
+    z-index: 2; /* Porta tutto sopra il velo nero */
     display: flex;
-    justify-content: space-between; /* Spinge i blocchi ai lati opposti */
-    align-items: center;            /* Li allinea verticalmente */
-    gap: 80px;                      /* Spazio tra logo e testo */
-    /* TRUCCO PER CENTRARE IL TUTTO */
-    max-width: 14000px;    /* Accorcia la larghezza totale del contenuto */
-    margin: 0 auto;       /* Centra il contenitore nella pagina */
-    padding: 0 40px;      /* Spazio interno di sicurezza per i lati */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    gap: 60px;
 }
 
 .cta-left p {
@@ -125,16 +140,8 @@ h1, h2, h3 {
 /* Assicurati che il contenitore a sinistra allinei tutto bene */
 .cta-left {
     flex: 1;
-    position: relative;
-    min-height: 500px;
-    display: flex;
-    align-items: flex-end; /* Testo in basso */
-    padding: 40px;
-    
-    /* CARICA L'IMMAGINE */
-    background: url('img/35.jpg') no-repeat;
-    background-position: left center; /* Immagine attaccata a sinistra */
-    background-size: contain; /* Mantiene le proporzioni senza tagliarla */
+    background: transparent; /* IMPORTANTE: togli ogni colore di sfondo vecchio */
+    padding: 20px;
 }
 
 /* IL SEGRETO PER LA LEGGIBILITÀ: Un gradiente nero sotto al testo */
@@ -154,9 +161,10 @@ h1, h2, h3 {
 
 /* ZONA DESTRA (Testo + Bottone) */
 .cta-right {
-    flex: 1.2; /* Diamo un po' più spazio alla parte scritta */
-    position: relative; /* Serve per posizionare la linea */
-    padding-left: 60px;
+    flex: 1;
+    background: transparent; /* IMPORTANTE: togli ogni colore di sfondo vecchio */
+    border-left: 2px solid #ff0000; /* La tua riga rossa di divisione */
+    padding-left: 50px;
 }
 
 .cta-right h2 {
