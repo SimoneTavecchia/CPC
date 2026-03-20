@@ -107,7 +107,7 @@ h1, h2, h3 {
     content: "";
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Regola questo (0.8 è più scuro) */
+    background: rgba(0, 0, 0, 0.4); /* Regola questo (0.8 è più scuro) */
     z-index: 1;
 }
 
@@ -133,6 +133,7 @@ h1, h2, h3 {
 .cta-left {
     flex: 1;
     text-align: left;
+    border-left: none; /* Rimuovi se ne hai uno qui */
 }
 
 /* IL SEGRETO PER LA LEGGIBILITÀ: Un gradiente nero sotto al testo */
