@@ -123,6 +123,7 @@ h1, h2, h3 {
     width: 90% !important;
     max-width: 1400px !important;
     margin: 0 auto !important;
+    margin-bottom: 0 !important;
     align-items: center !important;
     gap: 60px !important;
 }
