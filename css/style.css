@@ -101,6 +101,8 @@ h1, h2, h3 {
     justify-content: center !important;
     align-items: center !important;
     overflow: hidden !important;
+    margin-bottom: 0 !important; 
+    padding-bottom: 80px !important; /* Regola questo per decidere quanto spazio lasciare sotto i testi */
 }
 
 /* RIATTIVA IL VELO (Fondamentale!) */
@@ -542,8 +544,9 @@ h1, h2, h3 {
 /* -------------------------------- */
 footer {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0 !important;
     padding: 20px;
+    padding-top: 0 !important;
     background: #111;
     border-top: 2px solid red;
 }
