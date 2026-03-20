@@ -91,7 +91,13 @@ h1, h2, h3 {
     text-shadow: 0px 0px 10px black;
 }
 .join-community {
-    /* ... altre regole ... */
+    position: relative !important;
+    width: 100% !important;
+    min-height: 500px !important;
+    padding: 100px 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     background: red !important; /* SE DIVENTA ROSSO, IL CODICE È GIUSTO MA IL LINK ALLA FOTO È ROTTO */
 }
 
