@@ -92,7 +92,7 @@ h1, h2, h3 {
 }
 /* IL PADRE: Divide in due colonne */
 .join-community {
-   background: url('img/tua-foto-orizzontale.jpg') center/cover no-repeat;
+   background: url('img/IMG_Sfondo.jpg') center/cover no-repeat;
     position: relative;
     padding: 100px 0;
     display: flex;
