@@ -96,7 +96,7 @@ h1, h2, h3 {
     width: 100% !important;
     min-height: 500px !important;
     padding: 100px 0 !important;
-    background: url('img/tua-foto.jpg') center/cover no-repeat !important; /* CONTROLLA IL NOME */
+    background: url('img/IMG_Sfondo.jpg') center/cover no-repeat !important; /* CONTROLLA IL NOME */
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
