@@ -92,40 +92,47 @@ h1, h2, h3 {
 }
 /* IL PADRE: Divide in due colonne */
 .join-community {
-    background: url('img/IMG_Sfondo.jpg') center/cover no-repeat;
-    position: relative;
-    width: 100%;
-    padding: 100px 0;
-    min-height: 500px; /* Altezza minima per far respirare la sezione */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    position: relative !important;
+    width: 100% !important;
+    min-height: 500px !important;
+    padding: 100px 0 !important;
+    background: url('img/tua-foto.jpg') center/cover no-repeat !important; /* CONTROLLA IL NOME */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+/* IL VELO NERO (z-index: 1) */
+.join-community::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5) !important; /* 0.5 per far vedere la foto */
+    z-index: 1 !important;
 }
 
-
+/* IL CONTENITORE TESTI (z-index: 2) */
 .cta-container {
-    position: relative;
-    z-index: 2; /* DEVE ESSERE 2 per stare SOPRA il velo */
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    align-items: center;
-    gap: 60px;
+    position: relative !important;
+    z-index: 2 !important; /* SOPRA IL VELO */
+    display: flex !important;
+    width: 90% !important;
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    align-items: center !important;
+    gap: 60px !important;
 }
 
 .cta-left p {
-    color: #ff0000;      /* Il tuo rosso */
-    font-size: 18px;     /* Leggermente più grande per leggerlo bene */
-    font-weight: 700;
-    line-height: 1.5;
+    color: #ffffff !important; /* BIANCO PER LEGGERE BENE */
+    font-size: 16px !important;
 }
 
 /* Assicurati che il contenitore a sinistra allinei tutto bene */
+/* ZONA SINISTRA (Testo bianco) */
 .cta-left {
-    flex: 1;
-    text-align: left;
-    border-left: none; /* Rimuovi se ne hai uno qui */
+    flex: 1 !important;
+    border-left: none !important; /* QUI CANCELLIAMO LA RIGA A SINISTRA */
+    text-align: left !important;
 }
 
 /* IL SEGRETO PER LA LEGGIBILITÀ: Un gradiente nero sotto al testo */
@@ -143,12 +150,12 @@ h1, h2, h3 {
     height: auto;
 }
 
-/* ZONA DESTRA (Testo + Bottone) */
+/* ZONA DESTRA (Con riga rossa al centro) */
 .cta-right {
-    flex: 1;
-    border-left: 3px solid #ff0000; /* La riga rossa verticale */
-    padding-left: 50px;
-    text-align: left;
+    flex: 1 !important;
+    border-left: 3px solid #ff0000 !important; /* RIGA CENTRALE */
+    padding-left: 50px !important;
+    text-align: left !important;
 }
 
 .cta-right h2 {
