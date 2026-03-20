@@ -135,16 +135,7 @@ h1, h2, h3 {
     text-align: left !important;
 }
 
-/* IL SEGRETO PER LA LEGGIBILITÀ: Un gradiente nero sotto al testo */
-.cta-left::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    /* Sfuma la foto verso il nero del sito sia a destra che in alto */
-    background: linear-gradient(to right, transparent 20%, #0a0a0a 90%),
-                linear-gradient(to top, #0a0a0a 10%, transparent 50%);
-    z-index: 1;
-}
+
 .cpc-logo {
     max-width: 250px; /* Regola la grandezza del logo Cupra */
     height: auto;
@@ -176,19 +167,6 @@ h1, h2, h3 {
     font-size: 13px; /* Leggermente più piccolo per non appesantire */
     line-height: 1.5;
 
-}
-.cta-right::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 10%;            /* La stacca un po' dall'alto */
-    height: 100%;         /* La riga occupa l'80% dell'altezza del blocco */
-    width: 3px;          /* Spessore della riga */
-    background-color: red; /* Rosso */
-}
-
-.cta-left img {
-    margin-right: 100px; /* Allinea il logo con il padding del testo */
 }
 
 .box-bottone {
