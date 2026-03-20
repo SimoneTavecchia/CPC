@@ -96,7 +96,7 @@ h1, h2, h3 {
     min-height: 500px !important;
     padding: 100px 0 !important;
     /* METTI QUI IL NOME ESATTO DEL FILE */
-    background: url('..img/IMG-Sfondo.jpg') center/cover no-repeat !important; 
+    background: url('../img/IMG-Sfondo.jpg') center/cover no-repeat !important; 
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
