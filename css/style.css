@@ -595,6 +595,35 @@ footer {
 .footer-link:hover {
     letter-spacing: 1px; /* Effetto dinamico al passaggio del mouse */
 }
+/* Regole specifiche per la pagina privacy senza toccare .article generale */
+.privacy-body h2 {
+    font-size: 20px;
+    color: red; /* Titoli dei paragrafi in rosso per lo stile Cupra */
+    margin-top: 35px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.privacy-body p {
+    margin-bottom: 15px;
+    opacity: 0.9; /* Leggermente più spento per non stancare la vista */
+}
+
+.privacy-list {
+    margin: 15px 0 25px 25px; /* Spazio per l'elenco */
+}
+
+.privacy-list li {
+    color: #eee;
+    margin-bottom: 8px;
+    list-style-type: square; /* Punto elenco quadrato */
+}
+
+.privacy-body a {
+    color: red;
+    text-decoration: underline;
+}
+
 /* ============================================================
    SEZIONE RESPONSIVE (COPIA E INCOLLA IN FONDO AL TUO FILE)
    ============================================================ */
@@ -794,6 +823,15 @@ footer {
     .footer-link {
         font-size: 13px; /* Riduce la mail per non farla uscire dai bordi */
     }
+    /* AGGIUNGI QUESTO DENTRO IL @media (max-width: 768px) CHE HAI GIÀ IN FONDO */
+.privacy-body h2 {
+    font-size: 18px !important; /* Un po' più piccolo sul telefono */
+    margin-top: 25px;
+}
+.privacy-list {
+    padding-left: 15px; /* Meno spazio a sinistra per non rubare spazio al testo */
+}
+
 }
 
 /* OTTIMIZZAZIONE PER SCHERMI EXTRA SMALL (Sotto 480px) */
