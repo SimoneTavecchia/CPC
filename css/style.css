@@ -523,12 +523,65 @@ h1, h2, h3 {
 /* FOOTER */
 /* -------------------------------- */
 footer {
-    text-align: center;
     background: #111;
-    /* La riga rossa del footer */
-    border-top: 2px solid red !important;
-    margin-top: 0 !important; 
-    padding: 30px 0 !important;
+    border-top: 2px solid red;
+    padding: 40px 20px !important; /* Più respiro sopra e sotto */
+    text-align: center;
+    color: #eee;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Spazio tra le righe */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-label {
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: red;
+}
+
+.main-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    color: #888; /* Testo secondario un po' più spento */
+    font-size: 12px !important;
+    text-transform: uppercase;
+}
+
+.privacy-btn {
+    display: inline-block;
+    font-size: 11px;
+    color: #666;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.privacy-btn:hover {
+    border-color: red;
+    color: red;
 }
 /* ============================================================
    SEZIONE RESPONSIVE (COPIA E INCOLLA IN FONDO AL TUO FILE)
@@ -715,8 +768,13 @@ footer {
     .partner-socials {
         justify-content: center;
     }
-    footer {
-        padding: 25px 15px !important;
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footer-link {
+        font-size: 13px; /* Evita che la mail esca dai bordi */
     }
 }
 
