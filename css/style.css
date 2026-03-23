@@ -831,7 +831,30 @@ footer {
 .privacy-list {
     padding-left: 15px; /* Meno spazio a sinistra per non rubare spazio al testo */
 }
+.article {
+    padding: 20px 25px !important; /* Dà respiro ai lati di tutto il testo */
+}
 
+.privacy-body ul {
+    padding-left: 25px !important; /* Sposta i punti dell'elenco verso l'interno */
+    margin-left: 0;
+}
+
+.privacy-body li {
+    margin-bottom: 12px; /* Distanzia un po' i punti dell'elenco tra loro */
+    padding-left: 10px;  /* Spazio tra il quadratino e il testo */
+}
+
+.privacy-body h2 {
+    font-size: 18px !important;
+    line-height: 1.3;
+    margin-top: 30px;
+}
+
+/* Fix per evitare che la mail lunga rompa il layout */
+.privacy-body a {
+    word-break: break-all; 
+}
 }
 
 /* OTTIMIZZAZIONE PER SCHERMI EXTRA SMALL (Sotto 480px) */
