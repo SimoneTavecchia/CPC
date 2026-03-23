@@ -593,15 +593,32 @@ footer {
     }
 
     /* 4. VIDEO & OVERLAY */
-    .video-container {
-        height: 350px;
-    }
-    .video-overlay a {
-        display: block;
-        margin: 15px auto;
-        font-size: 14px;
-    }
+     .video-overlay {
+    width: 90% !important; /* Non farlo toccare i bordi dello schermo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; /* Li mettiamo uno sotto l'altro */
+    align-items: center;    /* Li centriamo perfettamente */
+    gap: 15px;             /* Spazio tra i vari social */
+}
 
+.video-overlay a {
+    font-size: 14px !important;
+    text-align: center;
+    word-break: break-all; /* Fondamentale per la mail: se è troppo lunga, va a capo invece di uscire dai bordi */
+    width: 100%;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Spazio tra l'icona e il testo del social */
+}
+
+.testo-link {
+    font-size: 14px !important;
+    letter-spacing: 1px;
+}
     /* 5. GRIGLIE (Membri, Blog, Partner) */
     .members-grid, .partner-grid.big, .blog-grid {
         grid-template-columns: 1fr !important; /* Forza una sola colonna */
