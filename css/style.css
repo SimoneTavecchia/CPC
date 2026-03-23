@@ -557,10 +557,15 @@ footer {
         text-align: center;
     }
     .hero h2 {
-        font-size: 28px;
-        line-height: 1.2;
+        font-size: 32px !important; /* Prova a giocare con questo valore */
+        line-height: 1.1;
     }
-
+    /* Aggiungi questo dentro la Media Query in fondo al file */
+   .hero h2, .hero p {
+      text-align: left !important; /* Toglie il justify solo su mobile */
+      word-spacing: normal !important; /* Riporta lo spazio tra parole alla normalità */
+      letter-spacing: normal !important; 
+   }
     /* 3. JOIN COMMUNITY & CTA */
     .join-community {
         padding: 60px 15px !important;
