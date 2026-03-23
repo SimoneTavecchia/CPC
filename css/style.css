@@ -45,7 +45,9 @@ h1, h2, h3 {
 .navbar a:hover {
     color: red;
 }
-
+.menu-checkbox, .menu-button {
+    display: none;
+}
 .logo {
     font-size: 24px;
     color: red;
@@ -534,17 +536,57 @@ footer {
 
 @media screen and (max-width: 768px) {
     /* 1. NAVBAR & LOGO */
+        /* --- NUOVA NAVBAR A TENDINA --- */
     .navbar {
+        position: relative;
+        display: flex !important;
+        flex-direction: row !important; /* Logo e tasto Menu affiancati */
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .menu-button {
+        display: block !important; /* Mostra il tasto MENU solo su mobile */
+        color: white;
+        border: 1px solid red;
+        padding: 5px 12px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .navbar nav {
+        display: none; /* Nasconde i link all'inizio */
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background: #111;
         flex-direction: column;
+        z-index: 1000;
+        border-bottom: 2px solid red;
+    }
+
+    .navbar nav a {
         padding: 15px;
+        margin: 0 !important;
+        border-bottom: 1px solid #222;
+        width: 100%;
         text-align: center;
-        gap: 15px;
+        display: block;
     }
-    .navbar a {
-        margin: 5px 10px;
-        font-size: 14px;
-        display: inline-block;
+
+    /* Il comando che fa apparire il menu quando clicchi */
+    .menu-checkbox:checked ~ nav {
+        display: flex !important;
     }
+
+    .menu-checkbox {
+        display: none;
+    }
+
+    
     .logo .separator {
         margin: 0 5px;
     }
