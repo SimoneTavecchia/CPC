@@ -544,6 +544,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
+        gap: 10px !important;       /* Riduciamo lo spazio tra Logo e tasto Menu */
     }
 
     .menu-button {
@@ -586,11 +587,17 @@ footer {
         display: none;
     }
 
-    
+    .logo {
+    font-size: 16px !important; /* Riduciamo la dimensione del font */
+    white-space: nowrap;        /* Impedisce alle parole di andare a capo */
+    flex-shrink: 1;             /* Permette al logo di rimpicciolirsi se serve */
+   }
     .logo .separator {
-        margin: 0 5px;
+        margin: 0 5px !important;   /* Riduciamo lo spazio intorno al trattino rosso */
     }
-
+    .logo a {
+    font-size: 16px !important;
+   } 
     /* 2. HERO SECTION */
     .hero {
         padding-left: 20px;
